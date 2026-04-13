@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Articles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAD9J2expKpUB1WJeDG7QPMoUstcyII9euPQmbKJ9EPRSsmuM5iPhzhuZPAiMLwpccDXKJtUl4yHb579g&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+</script>
+  <style>
+
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+/* Alinear altura total de tarjetas */
+.panel {
+  height: 520px;
+}
+
+/* Centrar imágenes y unificarlas */
+.panel-body {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-body img {
+  max-height: 220px;
+  width: auto;
+}
+
+/* Igualar altura zona inferior */
+.panel-footer {
+  min-height: 200px;
+  margin:0;
+}
+.panel {
+  height: auto;
+  min-height: 520px;
+}
+</style>
+
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Online Store</h1>
+    <p>Mission, Vision & Values</p>
+
+    <p>Welcome <span th:text="${username}"></span></p>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Articles</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+
+   <!-- Artículo 1 -->
+<div class="col-sm-4">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Iphone 17</div>
+
+    <div class="panel-body">
+      <img src="/images/article2.png" class="img-responsive" style="width:100%">
+    </div>
+
+    <div class="panel-footer">
+
+      <br><br>
+
+      <div id="paypal-container-XP9AR4TGURPNQ"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "XP9AR4TGURPNQ",
+  }).render("#paypal-container-XP9AR4TGURPNQ")
+</script>
+    </div>
+  </div>
+</div>
+
+    <!-- Artículo 2 -->
+<div class="col-sm-4">
+  <div class="panel panel-success">
+
+    <div class="panel-heading">Apple MacBook Pro 14</div>
+
+    <div class="panel-body">
+      <img src="/images/article3.png"
+           class="img-responsive"
+           style="width:100%">
+    </div>
+
+    <div class="panel-footer">
+
+
+      <br><br>
+
+  <div id="paypal-container-E8GAP3FVE2JXJ"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "E8GAP3FVE2JXJ",
+  }).render("#paypal-container-E8GAP3FVE2JXJ")
+</script>
+    </div>
+
+  </div>
+</div>
+
+ <!-- Artículo 3 -->
+<div class="col-sm-4">
+  <div class="panel panel-danger">
+
+    <div class="panel-heading">Sony WH-1000XM5 Headphones</div>
+
+    <div class="panel-body">
+      <img src="/images/article.png"
+           class="img-responsive"
+           style="width:100%">
+    </div>
+
+    <div class="panel-footer">
+
+
+      <br><br>
+
+      <div id="paypal-container-E6N2FM4TW48W2"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "E6N2FM4TW48W2",
+  }).render("#paypal-container-E6N2FM4TW48W2")
+</script>
+</div>
+</div>
+
+  </div>
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>
+</footer>
+
+</body>
+</html>

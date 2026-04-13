@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+</head>
+
+<body>
+
+<h1>Admin Panel</h1>
+
+<table border="1" style="border-collapse: collapse; padding:10px;">
+
+<tr>
+<th style="padding:8px;">Username</th>
+<th style="padding:8px;">Password</th>
+</tr>
+
+<tr th:each="u : ${usuarios}">
+<td th:text="${u.username}" style="padding:8px;"></td>
+<td th:text="${u.password}" style="padding:8px;"></td>
+</tr>
+
+</table>
+
+<br>
+<a href="/logout">Logout</a>
+
+</body>
+</html>
+
+
